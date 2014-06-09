@@ -1,0 +1,37 @@
+{
+  "id":"libMovies",
+  "jsonrpc":"2.0",
+  "result":{
+    "limits":{
+      "end":532,
+      "start":0,
+      "total":532
+    },
+    "movies":[
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\500_DAYS_OF_SUMMER.m2ts",
+        "label":"(500) Days of Summer",
+        "movieid":5,
+        "title":"(500) Days of Summer"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\127 Hours.avi",
+        "label":"127 Hours",
+        "movieid":4,
+        "title":"127 Hours"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\2001.A Space Odyssey.1080p.x264-ac3.mkv",
+        "label":"2001: A Space Odyssey",
+        "movieid":6,
+        "title":"2001: A Space Odyssey"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\A.Band.Called.Death.2012.LIMITED.1080p.BluRay.x264-GECKOS.mkv",
+        "label":"A Band Called Death",
+        "movieid":528,
+        "title":"A Band Called Death"
+      }
+    ]
+  }}
+

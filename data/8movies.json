@@ -1,0 +1,67 @@
+{
+  "id":"libMovies",
+  "jsonrpc":"2.0",
+  "result":{
+    "limits":{
+      "end":532,
+      "start":0,
+      "total":532
+    },
+    "movies":[
+
+{"art":{"fanart":"image://http%3a%2f%2fcf2.imgobject.com%2ft%2fp%2foriginal%2fmAwd34SAC8KqBKRm2MwHPLhLDU5.jpg/","poster":"image://http%3a%2f%2fcf2.imgobject.com%2ft%2fp%2foriginal%2f3UBQGKS8c1dxRnDiu5kUK6ej3pP.jpg/"},"director":["Sam Mendes"],"genre":["Drama"],"label":"American Beauty","movieid":15,"mpaa":"Rated R","plot":"Lester and Carolyn Burnham are on the outside, a perfect husband and wife, in a perfect house, in a perfect neighborhood. But inside, Lester is slipping deeper and deeper into a hopeless depression. He finally snaps when he becomes infatuated with one of his daughter's friends. Meanwhile, his daughter Jane is developing a happy friendship with a shy boy-next-door named Ricky, who lives with a homophobic father.","plotoutline":"Lester Burnham, a depressed suburban father in a mid-life crisis, decides to turn his hectic life around after developing an infatuation for his daughter's attractive friend.","rating":8.5,"runtime":7320,"studio":["DreamWorks SKG"],"tagline":"... look closer","title":"American Beauty","trailer":"plugin://plugin.video.youtube/?action=play_video&videoid=3ycmmJ6rxA8","year":1999},
+{"art":{"fanart":"image://http%3a%2f%2fcf2.imgobject.com%2ft%2fp%2foriginal%2fuSWzHRan14Kxe7AgbA43CSN1fXw.jpg/","poster":"image://http%3a%2f%2fcf2.imgobject.com%2ft%2fp%2foriginal%2frLWNo6B55xEPvoozPmooQGlkbyg.jpg/"},"director":["Ridley Scott"],"genre":["Biography","Crime","Drama"],"label":"American Gangster","movieid":16,"mpaa":"Rated R","plot":"Following the death of his employer and mentor, Bumpy Johnson, Frank Lucas establishes himself as the number one importer of heroin in the Harlem district of Manhattan. He does so by buying heroin directly from the source in South East Asia and he comes up with a unique way of importing the drugs into the United States. As a result, his product is superior to what is currently available on the street and his prices are lower. His alliance with the New York Mafia ensures his position. It is also the story of a dedicated and honest policeman, Richie Roberts, who heads up a joint narcotics task force with the Federal government. Based on a true story.","plotoutline":"In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.","rating":7.8000001907348633,"runtime":9420,"studio":["Universal Pictures"],"tagline":"There are two sides to the American dream.","title":"American Gangster","trailer":"plugin://plugin.video.youtube/?action=play_video&videoid=BV_nssS6Zkg","year":2007},
+{"art":{"fanart":"image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2f9yolVxwqbHjCwns4nEWvXBXyCAz.jpg/","poster":"image://http%3a%2f%2fimage.tmdb.org%2ft%2fp%2foriginal%2fus94cr0M2MTrjgSPA33eJsd7xfy.jpg/"},"director":["Edward James Olmos"],"genre":["Action","Adventure","Drama","Sci-Fi"],"label":"Battlestar Gallactica:The Plan","movieid":607,"mpaa":"","plot":"When the initial Cylon attack against the Twelve Colonies fails to achieve complete extermination of human life as planned, twin Number Ones (Cavils) embedded on Galactica and Caprica must improvise to destroy the human survivors.","plotoutline":"When the initial Cylon attack against the Twelve Colonies fails to achieve complete extermination of human life as planned, twin Number Ones (Cavils) embedded on Galactica and Caprica must improvise to destroy the human survivors.","rating":6.9000000953674316,"runtime":6720,"studio":["David Eick Productions"],"tagline":"","title":"Battlestar Gallactica:The Plan","trailer":"plugin://plugin.video.youtube/?action=play_video&videoid=ZmDtqSyvcc8","year":2009},
+
+
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\500_DAYS_OF_SUMMER.m2ts",
+        "label":"(500) Days of Summer",
+        "movieid":5,
+        "title":"(500) Days of Summer"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\21 & Over (2013) [1080p]\\21.&.Over.2013.1080p.BluRay.x264.YIFY.mp4",
+        "label":"21 & Over",
+        "movieid":267,
+        "title":"21 & Over"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\40 Year old Virgin.m2ts",
+        "label":"40 Year Old Virgin",
+        "movieid":315,
+        "title":"40 Year Old Virgin"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\42.2013.1080p.BluRay.x264-SPARKS.mkv",
+        "label":"42",
+        "movieid":316,
+        "title":"42"
+      },
+      {
+        "file":"stack://R:\\xbmc\\Movies\\Bluray Rips\\56.Up.2012.DVDRip.XviD-WiDE[rarbg]\\CD1\\56.up.2012.dvdrip.xvid-wide.cd1.avi , R:\\xbmc\\Movies\\Bluray Rips\\56.Up.2012.DVDRip.XviD-WiDE[rarbg]\\CD2\\56.up.2012.dvdrip.xvid-wide.cd2.avi",
+        "label":"56 Up",
+        "movieid":527,
+        "title":"56 Up"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\127 Hours.avi",
+        "label":"127 Hours",
+        "movieid":4,
+        "title":"127 Hours"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\2001.A Space Odyssey.1080p.x264-ac3.mkv",
+        "label":"2001: A Space Odyssey",
+        "movieid":6,
+        "title":"2001: A Space Odyssey"
+      },
+      {
+        "file":"R:\\xbmc\\Movies\\Bluray Rips\\A.Band.Called.Death.2012.LIMITED.1080p.BluRay.x264-GECKOS.mkv",
+        "label":"A Band Called Death",
+        "movieid":528,
+        "title":"A Band Called Death"
+      }
+    ]
+  }}
+

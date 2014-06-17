@@ -8,22 +8,22 @@ var RT_DELAY = 500;
 var http = require('http');
 var q = require('q');
 var t = require('./tools.js');
-var xbmcMovies = 'data/movies2.json';
+var xbmcMovies = 'data/8movies.json';
 //var jMovies = [];
 
 // the rotten tomatoes api URL. the name of the movie will be swapped with the {{title}} parameter.
 var queue=[];
 
 // loop through the list of movies and push a call to the callRottenTomatoes function for each one
-var looperz = function(jMovies){
-//console.log('jMovies',jMovies.result.movies);
-	jMovies.result.movies.forEach(function(val, idx, arr){
-		queue.push(callRottenTomatoes(val.title));
-	});
-	settleAll();
-};
+// var looperz = function(jMovies){
+// //console.log('jMovies',jMovies.result.movies);
+// console.log('movies',movies);
+// 	jMovies.result.movies.forEach(function(val, idx, arr){
+// 		queue.push(callRottenTomatoes(val.title));
+// 	});
+// 	settleAll();
+// };
 console.log('---------------------------:: ' + t.getTime() + ' ::---------------------------\n');
-
 
 t.getXBMCmovies(xbmcMovies, function(movies){
 	if(movies.error){
@@ -42,7 +42,11 @@ t.getXBMCmovies(xbmcMovies, function(movies){
 var looper = function(jMovies){
 	var j = 0;
 	var loopit = function(movies, j){
-		process.stdout.write('.');
+		if(j % 10 === 0){
+			process.stdout.write('\n' + j + '. ');
+		} else {
+			process.stdout.write('.');
+		}
 		if(j < jMovies.result.movies.length ){
 			setTimeout(function(){
 				loopit(jMovies.result.movies,++j);
@@ -62,9 +66,14 @@ function settleAll(){
 		var msg = '', moviePosters = [];
 		ful.forEach(function(val, idx, arr){
 				// pull out the correct content, based on success or failure
-				msg = val.state === 'fulfilled' ? val.value.id : 'error: ' + val.reason;
+				if(val.state === 'fulfilled'){
+					msg = '(' + val.value.id + ') ' + val.value.title;
+					moviePosters.push({ 'id' : val.value.id, 'title': val.value.title, 'URL': val.value.URLoriginal });
+				} else {
+					msg = 'error: ' + val.reason;
+//					moviesNotFound.push({ 'id' : val.value.id, 'title': val.value.title, 'URL': val.value.URLoriginal });
+				}
 				process.stdout.write(idx + '. ' + msg + '\n');
-				moviePosters.push({ 'id' : val.value.id, 'title': val.value.title });
 			}
 		);
 		console.log('\n');
@@ -105,7 +114,7 @@ function callRottenTomatoes(title){
 						deferred.reject('movie not found: ' + title);
 					} else {
 						// success   : )
-						deferred.resolve({ 'id' : movieData.movies[0].id, 'title' : movieData.movies[0].posters.original});
+						deferred.resolve({ 'id' : movieData.movies[0].id, 'title' : movieData.movies[0].title, 'URLoriginal' : movieData.movies[0].posters.original});
 					}
 				});
 				// not sure how/why this reject gets called
